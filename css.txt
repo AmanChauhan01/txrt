@@ -1,0 +1,83 @@
+.section{background: url(./wp4069470.jpg) no-repeat center top/cover; position: relative; ;z-index: 1; padding: 50px;}
+.section div.mask {
+  position: absolute;
+  background: rgba(50, 50, 100, 0.5);
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100%;
+  z-index: -1;
+  padding: 50px;
+}
+.icons{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+.icons .p{
+    list-style: none;
+    width: 120px;
+    height: 120px;
+    margin: 0 20px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.5s;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.icons .p i{
+    font-size: 48px;
+    color: black;
+    transition: all 0.5s;
+  }
+  
+.icons .p:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 50%;
+    z-index: -1;
+    transition: all 0.5s;
+    opacity: 1;
+    transform: scale(0.8);
+  }
+  
+  .icons .p :after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 50%;
+    z-index: -1;
+    transition: all 0.5s;
+    border: 2px dashed white;
+    box-sizing: border-box;
+    animation: rotate 10s linear infinite;
+    opacity: 1;
+    overflow: hidden;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: scale(0.92) rotate(0deg)
+    }
+    100% {
+      transform: scale(0.92) rotate(360deg)
+    }
+  }
+
+.section .box h2{font-family: 'Poppins', sans-serif; font-weight: 900; margin-top: 10px; color: white;}
+.section .box .p2{font-family: 'Barlow', sans-serif; font-weight: 600; color: white;}
